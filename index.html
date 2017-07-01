@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Alex's Favorite Twitch Streamers</title>
+
+  <!-- styles -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/application.css">
+</head>
+<body>
+  <!-- filter controls -->
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3 twitch-bg text-center">
+          <h1><i class="fa fa-twitch"></i> Alex's Favorite Streamers</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3 twitch-bg text-center">
+          <div id="twitch-filters" class="row">
+            <div class="col-xs-4">
+              <a id="filter-all" href="#" class="twitch-filter tf-active"><strong>All</strong></a>
+            </div>
+            <div class="col-xs-4">
+              <a id="filter-online" href="#" class="twitch-filter"><strong>Online</strong></a>
+            </div>
+            <div class="col-xs-4">
+              <a id="filter-offline" href="#" class="twitch-filter"><strong>Offline</strong></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- main stream info -->
+  <main>
+    <div class="container">
+      <div class="row">
+        <!-- freecodecamp -->
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3 stream">
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img id="s-freecodecamp-logo" class="media-object stream-logo" src="img/GlitchBadge_White_256px.png" alt="Placeholder Twitch glitch badge">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">FreeCodeCamp</h4>
+              <p id="s-freecodecamp-stream" class="text-muted">Streamer not found</p>
+            </div>
+            <div class="media-right">
+              <h4 id="s-freecodecamp-status" class="stream-unk"><i class="fa fa-circle"></i></h4>
+            </div>
+          </div>
+        </div>
+        <!-- monstercat -->
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3 stream">
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img id="s-monstercat-logo" class="media-object stream-logo" src="img/GlitchBadge_White_256px.png" alt="Placeholder Twitch glitch badge">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Monstercat</h4>
+              <p id="s-monstercat-stream" class="text-muted">Streamer not found</p>
+            </div>
+            <div class="media-right">
+              <h4 id="s-monstercat-status" class="stream-unk"><i class="fa fa-circle"></i></h4>
+            </div>
+          </div>
+        </div>
+        <!-- a_couple_streams -->
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3 stream">
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img id="s-a_couple_streams-logo" class="media-object stream-logo" src="img/GlitchBadge_White_256px.png" alt="Placeholder Twitch glitch badge">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">a_couple_streams</h4>
+              <p id="s-a_couple_streams-stream" class="text-muted">Streamer not found</p>
+            </div>
+            <div class="media-right">
+              <h4 id="s-a_couple_streams-status" class="stream-unk"><i class="fa fa-circle"></i></h4>
+            </div>
+          </div>
+        </div>
+        <!-- quill18 -->
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3 stream">
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img id="s-quill18-logo" class="media-object stream-logo" src="img/GlitchBadge_White_256px.png" alt="Placeholder Twitch glitch badge">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Quill18</h4>
+              <p id="s-quill18-stream" class="text-muted">Streamer not found</p>
+            </div>
+            <div class="media-right">
+              <h4 id="s-quill18-status" class="stream-unk"><i class="fa fa-circle"></i></h4>
+            </div>
+          </div>
+        </div>
+        <!-- lirik -->
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3 stream">
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img id="s-lirik-logo" class="media-object stream-logo" src="img/GlitchBadge_White_256px.png" alt="Placeholder Twitch glitch badge">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">LIRIK</h4>
+              <p id="s-lirik-stream" class="text-muted">Streamer not found</p>
+            </div>
+            <div class="media-right">
+              <h4 id="s-lirik-status" class="stream-unk"><i class="fa fa-circle"></i></h4>
+            </div>
+          </div>
+        </div>
+        <!-- badnewsbaron -->
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3 stream">
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img id="s-badnewsbaron-logo" class="media-object stream-logo" src="img/GlitchBadge_White_256px.png" alt="Placeholder Twitch glitch badge">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">BadNewsBaron</h4>
+              <p id="s-badnewsbaron-stream" class="text-muted">Streamer not found</p>
+            </div>
+            <div class="media-right">
+              <h4 id="s-badnewsbaron-status" class="stream-unk"><i class="fa fa-circle"></i></h4>
+            </div>
+          </div>
+        </div>
+        <!-- sovietwomble -->
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3 stream">
+          <div class="media">
+            <div class="media-left">
+              <a href="#">
+                <img id="s-sovietwomble-logo" class="media-object stream-logo" src="img/GlitchBadge_White_256px.png" alt="Placeholder Twitch glitch badge">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">SovietWomble</h4>
+              <p id="s-sovietwomble-stream" class="text-muted">Streamer not found</p>
+            </div>
+            <div class="media-right">
+              <h4 id="s-sovietwomble-status" class="stream-unk"><i class="fa fa-circle"></i></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3 footer">
+          <div class="row">
+            <div class="col-xs-6">
+              <i class="fa fa-twitch"></i> <a href="https://dev.twitch.tv/docs/">Twitch API</a>
+            </div>
+            <div class="col-xs-6 text-right">
+              <i class="fa fa-github"></i> Created by <a href="#">Alex Gladd</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

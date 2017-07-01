@@ -1,0 +1,85 @@
+/* Twitch App CSS
+ *
+ * https://coolors.co/4b367c-2d3142-bfc0c0-ffffff-ef8354
+ */
+
+body {
+  color: #2D3142;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 20px;
+}
+
+a, a:visited, a:focus, a:active {
+  color: #4B367C;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#twitch-filters {
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 5px solid #EF8354;
+}
+
+.twitch-filter, .twitch-filter:focus, .twitch-filter:visited, .twitch-filter:active {
+  display: block;
+  background-color: #BFC0C0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #2D3142;
+  text-decoration: none;
+}
+
+.twitch-filter:hover {
+  color: #2D3142;
+  text-decoration: none;
+  background-color: #AEAFAF;
+}
+
+.twitch-filter.tf-active {
+  background-color: #EF8354;
+}
+
+.twitch-bg {
+  background-color: #4B367C;
+}
+
+.twitch-bg h1 {
+  color: white;
+}
+
+.stream {
+  background-color: #ADA3C3;
+  border-bottom: 5px solid #EF8354;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.stream-logo {
+  width: 64px;
+  height: 64px;
+  border: 4px solid #BFC0C0;
+  border-radius: 50%;
+}
+
+.stream-unk {
+  color: #BFC0C0;
+}
+
+.stream-online {
+  color: lightgreen;
+}
+
+.stream-offline {
+  color: red;
+}
+
+.footer {
+  background-color: #BFC0C0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
